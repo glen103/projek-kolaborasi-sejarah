@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+    header {background: linear-gradient(to right, #007bff, #6610f2);}
+  </style>
+</head>
+<body>
+  <!-- NAVIGATION -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="chatgtt.html">home page</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="mataram.html">kehidupan politik (raja)</a></li>
+        <li class="nav-item"><a class="nav-link" href="sriwijaya.html">sejarah</a></li>
+        <li class="nav-item"><a class="nav-link" href="majapahit.html">galeri</a></li>
+        <li class="nav-item"><a class="nav-link" href="tentang.html">tentang</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- Header gapenting lah ya -->
+  <header class="bg-primary text-white text-center py-5">
+    <h1>Galeri Kerajaan Islam Indonesia</h1>
+    <p>Jelajahi foto-foto dan peninggalan sejarah kerajaan Islam di Indonesia</p>
+  </header>
+  
+      <!--tombol -->
+      <div class="container py-4">
+        <h1 class="text-center mb-4">Galeri Kerajaan Mataram </h1>
+      
+        <div class="text-center mb-4">
+          <button class="btn btn-outline-primary filter-btn mx-1" data-filter="all">Semua</button>
+          <button class="btn btn-outline-secondary filter-btn mx-1" data-filter="sejarah">Sejarah</button>
+          <button class="btn btn-outline-success filter-btn mx-1" data-filter="budaya">Budaya</button>
+          <button class="btn btn-outline-warning filter-btn mx-1" data-filter="alam">Alam</button>
+          <button class="btn btn-outline-dark filter-btn mx-1" data-filter="lainnya">Lainnya</button>
+
+        </div>
+      
+        <div class="row" id="gallery">
+      
+          <!-- Sejarah Card -->
+<div class="col-md-4 mb-4 subject-card" data-subject="sejarah">
+  <div class="card">
+    <img src="makam imogiri.jpg" class="card-img-top bg-secondary" alt="Kompleks Makam Imogiri">
+    <div class="card-body">
+      <h5 class="card-title">Kompleks Makam Imogiri</h5>
+      <p class="card-text">
+        Tempat pemakaman bagi para raja-raja Kesultanan Mataram, yang terletak di selatan Kota Yogyakarta.
+      </p>
+
+      <!-- Dropdown button -->
+      <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#imogiriDetail" aria-expanded="false" aria-controls="imogiriDetail">
+        Selengkapnya
+      </button>
+
+      <!-- Collapsible content -->
+      <div class="collapse mt-2" id="imogiriDetail">
+          Makam Imogiri memiliki fungsi utama sebagai tempat peristirahatan terakhir bagi raja-raja dan keluarga Kerajaan Mataram, serta menjadi tempat ziarah yang penting bagi masyarakat. Sejarahnya dimulai pada tahun 1632 ketika dibangun oleh Sultan Agung Hanyokrokusumo.
+          <br><br>
+          <strong>Fungsi Makam Imogiri:</strong>
+          <ul>
+            <li><strong>Tempat Peristirahatan Terakhir:</strong> Makam Imogiri menjadi tempat terakhir bagi para raja dan keluarga Kerajaan Mataram.</li>
+            <li><strong>Tempat Ziarah:</strong> Menjadi tujuan ziarah penting bagi masyarakat, terutama yang ingin berziarah ke makam leluhur mereka.</li>
+            <li><strong>Simbol Spiritual dan Budaya:</strong> Memiliki nilai spiritual dan budaya tinggi, merepresentasikan kekayaan sejarah dan budaya Jawa.</li>
+          </ul>
+          <strong>Sejarah Makam Imogiri:</strong>
+          <ul>
+            <li><strong>Pembangunan:</strong> Dibangun oleh Sultan Agung Hanyokrokusumo pada tahun 1632.</li>
+            <li><strong>Peresmian:</strong> Sultan Agung sendiri adalah raja pertama yang dimakamkan di Imogiri.</li>
+            <li><strong>Pembagian:</strong> Setelah Perjanjian Giyanti (1755), makam ini dibagi menjadi dua bagian: untuk raja-raja Kasultanan Yogyakarta dan Kasunanan Surakarta.</li>
+            <li><strong>Lokasi:</strong> Terletak di perbukitan Imogiri, Bantul, Yogyakarta, dekat Pegunungan Seribu.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+          <!-- Keraton Yogyakarta -->
+<div class="col-md-4 mb-4 subject-card" data-subject="sejarah">
+  <div class="card">
+    <img src="mataram.jpg" class="card-img-top bg-secondary" alt="Keraton Yogyakarta">
+    <div class="card-body">
+      <h5 class="card-title">Keraton Yogyakarta</h5>
+      <p class="card-text">Istana Kesultanan Yogyakarta, dibangun pada tahun 1755, adalah salah satu peninggalan Kerajaan Mataram Islam yang masih berfungsi sebagai pusat budaya dan pemerintahan.</p>
+
+      <!-- Dropdown button -->
+      <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#keratonDetail" aria-expanded="false" aria-controls="keratonDetail">
+        Selengkapnya
+      </button>
+
+      <!-- Collapsible content -->
+      <div class="collapse mt-2" id="keratonDetail">
+          Keraton Ngayogyakarta Hadiningrat, atau lebih dikenal sebagai Keraton Yogyakarta, adalah istana resmi Kesultanan Ngayogyakarta Hadiningrat. Keraton ini didirikan pada tahun 1755 oleh Sri Sultan Hamengkubuwono I setelah Perjanjian Giyanti yang membagi Kesultanan Mataram. Keraton ini berfungsi sebagai tempat tinggal Sultan dan keluarganya, serta sebagai pusat budaya Jawa.
+          <br><br>
+          Keraton Yogyakarta terdiri dari beberapa pelataran dan bangunan yang memiliki nama, fungsi, dan pelingkup khusus. Beberapa bangunan penting di Keraton Yogyakarta antara lain:
+          <ul>
+            <li><strong>Alun-alun Utara dan Selatan:</strong> Ruang terbuka yang digunakan untuk berbagai acara dan ritual.</li>
+            <li><strong>Pagelaran:</strong> Ruang terbuka yang digunakan untuk pertunjukan seni, seperti macapat, wayang kulit, dan tarian tradisional.</li>
+            <li><strong>Sitihinggil:</strong> Tempat untuk upacara dan perayaan penting.</li>
+            <li><strong>Bangsal:</strong> Ruang pertemuan dan aktivitas pemerintahan.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Masjid Agung Gedhe Kauman -->
+<div class="col-md-4 mb-4 subject-card" data-subject="sejarah">
+  <div class="card">
+    <img src="masjid.jpg" class="card-img-top bg-secondary" alt="Masjid Agung Gedhe Kauman">
+    <div class="card-body">
+      <h5 class="card-title">Masjid Agung Gedhe Kauman</h5>
+      <p class="card-text">
+        Masjid ini terletak di sebelah barat Alun-Alun Utara Yogyakarta, dan merupakan salah satu masjid bersejarah yang dibangun oleh Kerajaan Mataram Islam.
+      </p>
+
+      <!-- Dropdown button -->
+      <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#masjidDetail" aria-expanded="false" aria-controls="masjidDetail">
+        Selengkapnya
+      </button>
+
+      <!-- Collapsible content -->
+      <div class="collapse mt-2" id="masjidDetail">
+          Masjid Gedhe Kauman Yogyakarta, yang dibangun oleh Sri Sultan Hamengku Buwono I pada 29 Mei 1773, merupakan simbol harmonisasi sisi kebudayaan khas Kerajaan Yogyakarta yang sarat perjalanan sejarah dengan religiusitas masyarakatnya.
+          <br><br>
+          Selain sebagai sarana beribadah bagi keluarga raja dan rakyatnya, masjid yang juga dikenal sebagai <strong>Masjid Raya Daerah Istimewa Yogyakarta</strong> tersebut dibangun sebagai kelengkapan Kerajaan Islam Ngayogyakarta Hadiningrat.
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Taman Sari -->
+<div class="col-md-4 mb-4 subject-card" data-subject="sejarah">
+  <div class="card">
+    <img src="taman.jpg" class="card-img-top bg-secondary" alt="Taman Sari">
+    <div class="card-body">
+      <h5 class="card-title">Taman Sari</h5>
+      <p class="card-text">
+        Situs bersejarah ini dulunya adalah taman istana milik Keraton Yogyakarta, yang dibangun pada masa Sultan Hamengkubuwono I.
+      </p>
+
+      <!-- Dropdown button -->
+      <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#tamansariDetail" aria-expanded="false" aria-controls="tamansariDetail">
+        Selengkapnya
+      </button>
+
+      <!-- Collapsible content -->
+      <div class="collapse mt-2" id="tamansariDetail">
+          Selain keraton, bangunan yang pertama-tama dibangun pada masa awal keberadaan Kesultanan Yogyakarta adalah Tamansari. Tamansari didirikan di atas sebuah umbul (mata air) yang dikenal dengan nama Umbul Pacethokan.
+          <br><br>
+          Pembangunan kompleks taman dan pemandian seluas 1,26 hektar ini diselesaikan selama hampir delapan tahun, dari tahun 1757 hingga 1765.
+          <br><br>
+          Kemegahan Tamansari tidak bertahan cukup lama. Hanya berselang beberapa tahun semenjak selesai dibangun, tepatnya pada tanggal 7 September 1803, terjadi gempa akibat letusan Gunung Guntur di Jawa Barat. Gempa ini mengakibatkan pondasi Tamansari rusak. Air di kolam pemandian dan segaran (danau buatan) Tamansari merembes hingga kering.
+          <br><br>
+          Upaya perbaikan segera dilakukan. Menurut laporan Matthijs Waterloo, Sri Sultan Hamengku Buwono II telah kembali bersampan di Tamansari sebulan setelahnya.
+          <br><br>
+          Jujur kalo diliat liat rada mirip sama anubis di cs gara gara airnya 
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Kompleks Makam Imogiri -->
+<div class="col-md-4 mb-4 subject-card" data-subject="sejarah">
+  <div class="card">
+    <img src="mataram 2.jpeg" class="card-img-top bg-secondary" alt="Sejarah 2">
+    <div class="card-body">
+      <h5 class="card-title text-capitalize">Keraton Kotagede</h5>
+      <p class="card-text">
+        Dulunya adalah pusat pemerintahan Kerajaan Mataram Islam, dengan berbagai bangunan bersejarah di dalamnya.
+      </p>
+
+      <!-- Dropdown button -->
+      <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#kotagedeDetail" aria-expanded="false" aria-controls="kotagedeDetail">
+        Selengkapnya
+      </button>
+
+      <!-- Collapsible content -->
+      <div class="collapse mt-2" id="kotagedeDetail">
+          Keraton Kotagede, yang kini merupakan situs cagar budaya, memiliki sejarah sebagai ibukota Kerajaan Mataram Islam pada abad ke-16. Tujuan utama keraton ini adalah menjadi pusat pemerintahan, kegiatan sosial budaya, dan pusat ekonomi masyarakat.
+          <br><br>
+          <strong>Sejarah:</strong>
+          <ul>
+            <li><strong>Masa Kerajaan Mataram Islam:</strong> Kotagede menjadi ibukota Kerajaan Mataram Islam yang didirikan oleh Panembahan Senopati.</li>
+            <li><strong>Pusat Pemerintahan:</strong> Berfungsi sebagai pusat pemerintahan dan kegiatan politik, sosial budaya, serta ekonomi masyarakat.</li>
+            <li><strong>Pindah Kerajaan:</strong> Pusat kerajaan dipindahkan dari Kotagede ke Kerta oleh Sultan Agung.</li>
+            <li><strong>Situs Bersejarah:</strong> Tetap menjadi lokasi penting dengan berbagai peninggalan seperti makam raja-raja Mataram.</li>
+            <li><strong>Terbagi Dua:</strong> Setelah Palihan Nagari, wilayah ini terbagi antara Kasunanan Surakarta dan Kasultanan Ngayogyakarta Hadiningrat.</li>
+          </ul>
+
+          <strong>Tujuan:</strong>
+          <ul>
+            <li><strong>Pusat Pemerintahan:</strong> Untuk mengelola dan menjalankan pemerintahan kerajaan.</li>
+            <li><strong>Pusat Kegiatan Sosial Budaya:</strong> Tempat berlangsungnya berbagai kegiatan masyarakat Mataram.</li>
+            <li><strong>Pusat Ekonomi:</strong> Mendorong perdagangan dan kerajinan, terutama kerajinan perak.</li>
+            <li><strong>Tempat Suci:</strong> Keraton dan makam dianggap suci dan menjadi tempat ziarah.</li>
+            <li><strong>Cagar Budaya:</strong> Kini dilestarikan sebagai warisan sejarah dan budaya yang penting.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Masjid Jami Pakuncen -->
+<div class="col-md-4 mb-4 subject-card" data-subject="sejarah">
+  <div class="card">
+    <img src="masjid jami pakuncen.jpg" class="card-img-top bg-secondary" alt="Masjid Jami Pakuncen">
+    <div class="card-body">
+      <h5 class="card-title">Masjid Jami Pakuncen</h5>
+      <p class="card-text">Masjid bersejarah yang juga menjadi saksi bisu perjalanan Kerajaan Mataram Islam.</p>
+
+      <!-- Dropdown button -->
+      <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#pakuncenDetail" aria-expanded="false" aria-controls="pakuncenDetail">
+        Selengkapnya
+      </button>
+
+      <!-- Collapsible content -->
+      <div class="collapse mt-2" id="pakuncenDetail">
+          <strong>Masjid Jami Pakuncen</strong> yang berdiri di Tegal Arum, Kabupaten Tegal, Jawa Tengah, merupakan salah satu bangunan peninggalan Islam yang dibangun oleh Sunan Amangkurat I. Masjid ini menjadi tempat penting dalam penyebaran Islam pada masa Kerajaan Mataram Islam.
+
+          <br><br>
+          Menurut Juru Kunci Makam Sunan Amangkurat, Masruri, masjid ini awalnya dibangun secara sederhana menggunakan bahan sirap dari potongan kayu jati. Masjid ini menjadi tempat awal dakwah bagi masyarakat setempat dan hingga tahun 2009 telah tiga kali dipugar, namun tetap mempertahankan ciri khas era Mataram Islam.
+
+          <br><br>
+          Selain di Tegal Arum, pembangunan masjid juga dilakukan di wilayah lain seperti Sukaraja dan Ajibarang, sebagai bagian dari strategi penyebaran ajaran Islam oleh Kerajaan Mataram.
+
+          <hr>
+
+          <strong>Tradisi dan Budaya Mataram Islam</strong>
+          <br><br>
+          <strong>Kesenian:</strong>
+          <ul>
+            <li><strong>Gamelan:</strong> Musik tradisional Jawa yang mengiringi upacara dan pertunjukan seni.</li>
+            <li><strong>Tari Tradisional:</strong> Seperti Tari Serimpi yang sakral dan penuh makna filosofis.</li>
+            <li><strong>Wayang Kulit:</strong> Menceritakan kisah-kisah kitab suci dan legenda Jawa.</li>
+            <li><strong>Dagelan Mataram:</strong> Kesenian humor khas keraton Yogyakarta dengan cerita dan bahasa Jawa.</li>
+            <li><strong>Ketoprak:</strong> Pertunjukan gabungan musik, tari, dan drama cerita rakyat.</li>
+          </ul>
+
+          <strong>Adat Istiadat dan Tradisi:</strong>
+          <ul>
+            <li><strong>Nyongkolan:</strong> Penyambutan tamu kehormatan, terutama dalam pernikahan.</li>
+            <li><strong>Nawu Sendang Seliran:</strong> Tradisi membersihkan kolam di lingkungan Kerajaan Mataram Awal di Kotagede.</li>
+            <li><strong>Kirab Budaya Ngarak Siwur:</strong> Prosesi budaya dengan pasukan bregodo dan gunungan sebagai simbol kemakmuran.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+      
+          <!-- Budaya Card -->
+          <div class="col-md-4 mb-4 subject-card" data-subject="budaya">
+            <div class="card">
+              <img src="" class="card-img-top bg-secondary" alt="Budaya 1">
+              <div class="card-body">
+                <h5 class="card-title">Judul Budaya 1</h5>
+                <p class="card-text">Deskripsi singkat tentang gambar budaya.</p>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Alam Card -->
+          <div class="col-md-4 mb-4 subject-card" data-subject="alam">
+            <div class="card">
+              <img src="gunungmataram.png" class="card-img-top bg-secondary" alt="Alam 1">
+              <div class="card-body">
+                <h5 class="card-title">gunung yang membunuh mataram</h5>
+                <p class="card-text">Gunung Merapi, yang menghancurkan Mataram pada abad ke-16</p>
+              </div>
+            </div>
+          </div>
+          <!-- lain-->
+<div class="col-md-4 mb-4 subject-card" data-subject="lainnya">
+  <div class="card">
+    <img src="peta mataram.png" class="card-img-top" alt="Peta Keberadaan Mataram" />
+    <div class="card-body">
+      <h5 class="card-title">Peta Keberadaan Mataram</h5>
+      <p class="card-text">Ada di Canva slide ke-2 aku ambil.</p>
+
+      <!-- Tombol dropdown -->
+      <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#mataramMapDetail" aria-expanded="false" aria-controls="mataramMapDetail">
+        Selengkapnya
+      </button>
+
+      <!-- Konten yang dapat dikembangkan -->
+      <div class="collapse mt-2" id="mataramMapDetail">
+          <strong>Kerajaan Mataram Islam</strong> berlokasi di wilayah yang kini dikenal sebagai <strong>Yogyakarta</strong>, atau lebih tepatnya di <strong>Kotagede</strong>sebagai pusat pemerintahan kerajaan. Wilayah ini merupakan pusat awal berkembangnya kerajaan di bawah kepemimpinan <em>Panembahan Senopati</em>.
+
+          <br><br>
+          Seiring waktu, pusat pemerintahan berpindah ke:
+          <ul>
+            <li><strong>Kerto</strong>: Pusat pemerintahan dipindahkan oleh Sultan Agung untuk memperluas dan memperkuat kekuasaan Mataram.</li>
+            <li><strong>Kartasura</strong>: Setelah masa gejolak dan perubahan politik, pusat pemerintahan berpindah ke Kartasura, yang kini berada di wilayah Jawa Tengah.</li>
+          </ul>
+
+          Perpindahan ini menunjukkan dinamika politik dan strategi pertahanan kerajaan yang terus berkembang dalam menghadapi tekanan internal maupun eksternal.
+
+          <hr>
+
+          Peta ini memberikan gambaran penting mengenai <strong>letak geografis</strong> dari Kerajaan Mataram Islam pada masa kejayaannya. 
+        </div>
+      </div>
+    </div>
+  </div>
+
+      
+
+      
+        </div> <!-- Close row -->
+      </div> <!-- Close container -->
+      
+  
+      <!-- Tambahkan lebih banyak kartu sesuai kebutuhan -->
+    </div>
+  </div>
+  
+  <script>
+    document.querySelectorAll('.filter-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        const filter = button.getAttribute('data-filter');
+        document.querySelectorAll('.subject-card').forEach(card => {
+          const subject = card.getAttribute('data-subject');
+          if (filter === 'all' || subject === filter) {
+            card.classList.remove('d-none');
+          } else {
+            card.classList.add('d-none');
+          }
+        });
+      });
+    });
+  </script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  </html>
+  
+  <!-- Footer -->
+  <footer class="text-center bg-dark text-white py-3">
+    <p>&copy; 2025 Website Sejarah Nusantara | Penilaian oleh gaganharmaen@smatalenta.sch.id & valentinalussy@smatalenta.sch.id</p>
+  </footer>
+</body>
+</html>

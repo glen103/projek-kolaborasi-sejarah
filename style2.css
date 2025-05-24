@@ -1,0 +1,75 @@
+  .t {
+    background-image: url(images.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+    background-position: center;
+  }
+
+  .j {
+    font-size: 18px; /* Updated to 18px */
+    text-align: center;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .b {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px; /* Updated to 15px */
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: aqua;
+  }
+  .b.norm {
+  background-color: white;
+  border: none;
+  box-shadow: none;
+  text-align: left;
+  width: auto;
+}
+  .gap {
+  margin-bottom: 20px; /* Adjust the size as needed */
+}
+  .tc {
+    border: 2px solid black; /* creates the border */
+    background-color: white; /* sets the background color inside the border */
+    padding: 10px; /* optional: adds space inside the border */
+  }
+  .tc .b {
+  background-color: white;
+  border: none;
+  box-shadow: none;
+  text-align: left;
+  width: auto;
+}
+.img-box /* gambar buat bagian html non-galeri */ {
+  display: block;
+  max-width: 100%;       /* Responsive sizing */
+  height: auto;          /* Maintain aspect ratio */
+  border-radius: 10px;   /* Rounded corners */
+  margin: 20px auto;     /* Center the image with vertical spacing */
+}
+  @media (max-width: 768px) {  .b {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px; 
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: auto;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: aqua;
+  }
+    .j {
+    font-size: 15px; 
+    text-align: center;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+}
